@@ -6,7 +6,7 @@
         <css/>
         <glyph/>
         <id/>
-        <order>3</order>
+        <order>4</order>
         <roles/>
         <short_description/>
         <size>md</size>
@@ -14,28 +14,28 @@
         <sp_widget display_value="test stats 2">f1babddf1b2b3410cbb1dc6cdc4bcb20</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-11-06 13:05:15</sys_created_on>
-        <sys_id>08be9ad31beb3410cbb1dc6cdc4bcb8e</sys_id>
-        <sys_mod_count>19</sys_mod_count>
-        <sys_name>Today's Donators</sys_name>
+        <sys_created_on>2021-11-06 18:21:33</sys_created_on>
+        <sys_id>5917a79b1ba33010cbb1dc6cdc4bcb77</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Today's Receivers</sys_name>
         <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
         <sys_policy/>
         <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
-        <sys_update_name>sp_instance_08be9ad31beb3410cbb1dc6cdc4bcb8e</sys_update_name>
+        <sys_update_name>sp_instance_5917a79b1ba33010cbb1dc6cdc4bcb77</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-06 18:21:17</sys_updated_on>
-        <title>Today's Donators</title>
+        <sys_updated_on>2021-11-06 18:22:00</sys_updated_on>
+        <title>Today's Receivers</title>
         <url/>
         <widget_parameters><![CDATA[{
 	"title": {
-		"value": "Today's Donators",
-		"displayValue": "Today's Donators"
+		"value": "Today's Receivers",
+		"displayValue": "Today's Receivers"
 	},
 	"type": {
-		"value": "donations",
-		"displayValue": "donations"
+		"value": "received",
+		"displayValue": "received"
 	}
 }]]></widget_parameters>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=08be9ad31beb3410cbb1dc6cdc4bcb8e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=5917a79b1ba33010cbb1dc6cdc4bcb77"/>
 </record_update>
