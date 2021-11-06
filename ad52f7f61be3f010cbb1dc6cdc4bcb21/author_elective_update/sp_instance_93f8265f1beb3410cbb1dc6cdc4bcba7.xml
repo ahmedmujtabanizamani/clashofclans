@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">43ce5ed31beb3410cbb1dc6cdc4bcb20</sp_column>
+        <sp_widget display_value="Report">e41aa2d29f0222008252baac757fcfce</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 13:50:16</sys_created_on>
+        <sys_id>93f8265f1beb3410cbb1dc6cdc4bcba7</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_update_name>sp_instance_93f8265f1beb3410cbb1dc6cdc4bcba7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 14:36:29</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"report_id": {
+		"value": "90772edb1beb3410cbb1dc6cdc4bcba9",
+		"displayValue": "donations 2"
+	},
+	"show_title": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=93f8265f1beb3410cbb1dc6cdc4bcba7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</application>
+        <file_path/>
+        <instance_id>7ccf6fbadb2c5fc0cbf6d5b0cf9619a0</instance_id>
+        <instance_name>dev51465</instance_name>
+        <name>sp_instance_93f8265f1beb3410cbb1dc6cdc4bcba7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;2&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;43ce5ed31beb3410cbb1dc6cdc4bcb20&lt;/sp_column&gt;&lt;sp_widget display_value="Report"&gt;e41aa2d29f0222008252baac757fcfce&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-11-06 13:50:16&lt;/sys_created_on&gt;&lt;sys_id&gt;93f8265f1beb3410cbb1dc6cdc4bcba7&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Clash stats" source="x_714442_clash_s_0"&gt;ad52f7f61be3f010cbb1dc6cdc4bcb21&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Clash stats"&gt;ad52f7f61be3f010cbb1dc6cdc4bcb21&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_93f8265f1beb3410cbb1dc6cdc4bcba7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-11-06 14:36:29&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"report_id": {
+		"value": "90772edb1beb3410cbb1dc6cdc4bcba9",
+		"displayValue": "donations 2"
+	},
+	"show_title": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=93f8265f1beb3410cbb1dc6cdc4bcba7"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1486149</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>2d52f7f61be3f010cbb1dc6cdc4bcb24</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 14:36:29</sys_created_on>
+        <sys_id>6c937ad71b2f3410cbb1dc6cdc4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17cf5adf03d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 14:36:29</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>a4937ad7ff2f34101ad51ff71a045a47</update_guid>
+        <update_guid_history>a4937ad7ff2f34101ad51ff71a045a47:-1486149,093336d7472f341064bdbde294f72934:-2141772934,10f0f257602f34104b2474f1c4342756:-1486149,dfe07257642f3410cb36f349be490536:-2141772934,76907ed3152f341065ea487c4bf9c48a:-1486149,f7203a17d02f341080af9e5483f63758:-2141772934,bb10f6172c2f3410d3f96d9f71d7014b:-1486149,dc19ea5f7aeb34102433a5e0f296e68d:-2141772934,5bf8aa5f7beb3410393cd76de1b03aa2:941432198</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">4f26369b1b2f3410cbb1dc6cdc4bcbfb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 14:47:51</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>44172be2bca94d66992bc0a58d4a1d24</sys_id>
+        <sys_metadata>93f8265f1beb3410cbb1dc6cdc4bcba7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_scope_delete display_value="">2d7e0a8b1311484abf3186d6f9124e81</sys_scope_delete>
+        <sys_update_name>sp_instance_93f8265f1beb3410cbb1dc6cdc4bcba7</sys_update_name>
+        <sys_update_version display_value="sp_instance_93f8265f1beb3410cbb1dc6cdc4bcba7">6c937ad71b2f3410cbb1dc6cdc4bcb47</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 14:47:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>update stats</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 00:01:00</run_period>
+        <run_start>2021-11-05 07:14:39</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[var status = "";
+var body = "";
+try{
+	var r = new sn_ws.RESTMessageV2('clan stats', 'Default GET');
+	r.setStringParameterNoEscape("clanTag", gs.getProperty("x_714442_clash_s_0.clanTag"));
+
+	var response = r.execute();
+
+	body = JSON.parse(response.getBody());
+	status = response.getStatusCode();
+
+
+	if(status === 200){
+
+		var len = body.items.length;
+
+		for( i=0; i<len; i++){
+
+			var playerExist = false;
+			var recordExist = false;  //later use
+
+			var pr = new GlideRecord("x_714442_clash_s_0_players");
+			var tag = body.items[i].tag;  // player id from api
+
+			if(!pr.get("player_id", tag))
+			{
+				//code here if player doe not exist in our database, case where new player joined clan.
+			}
+			else
+			{
+				playerExist = true;
+			}
+
+			if(playerExist)
+			{
+				var playerRecord = body.items[i];
+				var sysId = pr.getValue("sys_id");
+
+				var query = "player="+sysId+"^sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()";
+
+				var gr = new GlideRecord("x_714442_clash_s_0_daily_stats");
+
+				gr.addEncodedQuery(query);
+				gr.query();
+
+				//if record already collected for player id, then update result
+				if(gr.next())
+				{
+					//check if there is any changing it record
+					if((!(playerRecord.donations===Number(gr.getValue("donations"))) || !(playerRecord.donationsReceived===Number(gr.getValue("received")))))
+					{
+						gs.info("what -- changed again!");
+						var dt = new GlideDateTime(gr.getValue("sys_created_on"));
+						gr.setValue("donations", playerRecord.donations);
+						gr.setValue("received", playerRecord.donationsReceived);
+						gr.update();
+
+					}
+
+					//gs.info(pr.getValue("name")+", "+pr.getValue("player_id")+", "+gr.getElement("player").player_id+", "+"created on,  "+dt.getLocalDate()+"  , "+gr.getValue("sys_created_by")+"  ,  "+gr.getValue("donations")+",  ");
+				}
+				else
+				{
+					gr.initialize();
+					gr.setValue("donations", playerRecord.donations);
+					gr.setValue("received", playerRecord.donationsReceived);
+					gr.getElement("player").setDisplayValue(tag);
+					gr.insert();
+					//if player data does not collected for current date.
+				}
+			}
+
+		}
+
+		//gs.into("object  --- >  "+gr.isValidRecord()+"  ,   <-->  "+ gr.getValue("sys_created_on"));
+		/*		
+		for(i=0; i<len; i++){
+			var tag = body.items[i].tag;
+
+
+			gr.initialize();
+
+			//pr.get("player_id","#PP0L0G099");
+
+			gr.setValue("donations", body.items[i].donations);
+			gr.setValue("received", body.items[i].donationsReceived);
+			gr.player.setDisplayValue(tag);
+			gr.insert();
+		}
+		*/
+
+		//gs.info("coc --> success update");
+	}
+
+
+}catch(err){
+	gs.error("error is" +err);
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-05 07:15:53</sys_created_on>
+        <sys_id>26d4ccc71b27f010cbb1dc6cdc4bcb18</sys_id>
+        <sys_mod_count>80</sys_mod_count>
+        <sys_name>update stats</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_update_name>sysauto_script_26d4ccc71b27f010cbb1dc6cdc4bcb18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-05 18:03:49</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

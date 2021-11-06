@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="players" max_length="40" name="x_714442_clash_s_0_players" sizeclass="47" type="collection">
+        <element label="name" max_length="40" name="name" type="string"/>
+        <element display="true" label="player id" max_length="12" name="player_id" type="string"/>
+    </element>
+</database>

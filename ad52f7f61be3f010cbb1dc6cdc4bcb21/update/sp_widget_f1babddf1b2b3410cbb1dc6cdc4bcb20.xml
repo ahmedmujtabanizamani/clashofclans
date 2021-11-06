@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>test_stats_2</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>test stats 2</name>
+        <option_schema/>
+        <public>true</public>
+        <roles>x_714442_clash_s_0.clan member,x_714442_clash_s_0.clan leader</roles>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.name = "hello";
+	var d1 = new GlideRecord("x_714442_clash_s_0_daily_stats");
+	d1.addEncodedQuery("sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()");
+	d1.query();
+
+	data.items = [];
+	data.it = [];
+	
+	data.players = [];
+	var i=0;
+	while(d1.next())
+	{
+		
+		//data.players.push(d1.getValue("name"));
+
+		var pid = d1.getValue("player");
+
+		var qr = "sys_created_onONYesterday@javascript:gs.beginningOfYesterday()@javascript:gs.endOfYesterday()^player="+pid;	
+		var d2 = new GlideRecord("x_714442_clash_s_0_daily_stats");
+		d2.addEncodedQuery(qr);
+		d2.query();
+		if(d2.next())
+		{
+			var donations = d1.getValue("donations")-d2.getValue("donations");
+			
+			if(donations > 0){
+				data.items.push({name:d2.getValue("name"), donations: donations});
+			//data.it.push("");
+			}
+
+		}
+		else{
+			//data.items[i]="nope";
+		}					
+		i++;
+
+		//while(d1.next())
+
+	}
+	data.items.sort(function(a, b){return (a.donations < b.donations) ? 1 : -1;});
+	data.i = i;
+	data.name2="bye";
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 10:28:05</sys_created_on>
+        <sys_id>f1babddf1b2b3410cbb1dc6cdc4bcb20</sys_id>
+        <sys_mod_count>82</sys_mod_count>
+        <sys_name>test stats 2</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_update_name>sp_widget_f1babddf1b2b3410cbb1dc6cdc4bcb20</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 12:33:01</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <h1>
+    ${Todays Donators}
+  </h1>
+  <br>
+  <table class="table">
+    
+    <tr>
+      <th>name</th>
+      <th>donations</th>
+    </tr>
+    <tr ng-repeat="i in data.items">
+    	<td>
+        {{i.name}}
+      </td>
+      <td>
+        {{i.donations}}
+      </td>
+    </tr>
+  </table>
+  <h1>
+    Out of {{data.i}} members
+  </h1>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>
