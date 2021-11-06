@@ -2,9 +2,11 @@
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
         <client_script><![CDATA[api.controller=function() {
-  /* widget controller */
-  var c = this;
-	
+	/* widget controller */
+
+	var c = this;
+	c.data.title = c.options.title;
+	setInterval(function(){ c.server.update(); }, 30000);
 };]]></client_script>
         <controller_as>c</controller_as>
         <css/>
@@ -18,7 +20,7 @@
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
         <name>test stats 2</name>
-        <option_schema/>
+        <option_schema>[{"hint":"title of widget","name":"title","section":"Data","label":"Title","type":"string"},{"hint":"please mention what data u need for today.","name":"type","section":"Data","default_value":"donations","label":"Type","type":"choice","choices":[{"label":"donations","value":"donations"},{"label":"received","value":"received"}]}]</option_schema>
         <public>true</public>
         <roles>x_714442_clash_s_0.clan member,x_714442_clash_s_0.clan leader</roles>
         <script><![CDATA[(function() {
@@ -47,10 +49,12 @@
 		d2.query();
 		if(d2.next())
 		{
-			var donations = d1.getValue("donations")-d2.getValue("donations");
+			var donationsType = options.type;
 			
-			if(donations > 0){
-				data.items.push({name:d2.getValue("name"), donations: donations});
+			var troops = d1.getValue(donationsType)-d2.getValue(donationsType);
+			
+			if(troops > 0){
+				data.items.push({name:d2.getValue("name"), troops: troops});
 			//data.it.push("");
 			}
 
@@ -63,43 +67,45 @@
 		//while(d1.next())
 
 	}
-	data.items.sort(function(a, b){return (a.donations < b.donations) ? 1 : -1;});
+	data.items.sort(function(a, b){return (a.troops < b.troops) ? 1 : -1;});
 	data.i = i;
 	data.name2="bye";
 
 
-})();]]></script>
+})();
+]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-11-06 10:28:05</sys_created_on>
         <sys_id>f1babddf1b2b3410cbb1dc6cdc4bcb20</sys_id>
-        <sys_mod_count>82</sys_mod_count>
+        <sys_mod_count>109</sys_mod_count>
         <sys_name>test stats 2</sys_name>
         <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
         <sys_policy/>
         <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
         <sys_update_name>sp_widget_f1babddf1b2b3410cbb1dc6cdc4bcb20</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-06 12:33:01</sys_updated_on>
+        <sys_updated_on>2021-11-06 18:48:18</sys_updated_on>
         <template><![CDATA[<div>
 <!-- your widget template -->
   <h1>
-    ${Todays Donators}
+  
+    {{c.data.title}}
   </h1>
   <br>
   <table class="table">
     
     <tr>
       <th>name</th>
-      <th>donations</th>
+      <th>{{options.type}}</th>
     </tr>
     <tr ng-repeat="i in data.items">
     	<td>
         {{i.name}}
       </td>
       <td>
-        {{i.donations}}
+        {{i.troops}}
       </td>
     </tr>
   </table>

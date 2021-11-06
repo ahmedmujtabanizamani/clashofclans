@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {	
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>h1 {
+color: #428bca;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{
+	"data": {
+		"sometext": "world"
+	}
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>test_stats</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>test stats</name>
+        <option_schema>[{"hint":"title of widget","name":"title","section":"Data","default_value":"title of widget","label":"title","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.gm = [];
+	data.gm.push({name: "mujtaba"});
+	
+	//data.table = $sp.getValue('x_714442_clash_s_0_daily_stats');
+	
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 09:22:16</sys_created_on>
+        <sys_id>f5aba9931b2b3410cbb1dc6cdc4bcbc7</sys_id>
+        <sys_mod_count>59</sys_mod_count>
+        <sys_name>test stats</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_update_name>sp_widget_f5aba9931b2b3410cbb1dc6cdc4bcbc7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 17:31:51</sys_updated_on>
+        <template><![CDATA[<div>
+  <h1 ng-repeat="i in data.gm">
+    {{i.name}}
+  </h1>  
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</application>
+        <file_path/>
+        <instance_id>7ccf6fbadb2c5fc0cbf6d5b0cf9619a0</instance_id>
+        <instance_name>dev51465</instance_name>
+        <name>sp_widget_f5aba9931b2b3410cbb1dc6cdc4bcbc7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {	
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;h1 {
+color: #428bca;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{
+	"data": {
+		"sometext": "world"
+	}
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;test_stats&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;test stats&lt;/name&gt;&lt;option_schema&gt;[{"hint":"title of widget","name":"title","section":"Data","default_value":"title of widget","label":"title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.gm = [];
+	data.gm.push({name: "mujtaba"});
+	
+	//data.table = $sp.getValue('x_714442_clash_s_0_daily_stats');
+	
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-11-06 09:22:16&lt;/sys_created_on&gt;&lt;sys_id&gt;f5aba9931b2b3410cbb1dc6cdc4bcbc7&lt;/sys_id&gt;&lt;sys_mod_count&gt;59&lt;/sys_mod_count&gt;&lt;sys_name&gt;test stats&lt;/sys_name&gt;&lt;sys_package display_value="Clash stats" source="x_714442_clash_s_0"&gt;ad52f7f61be3f010cbb1dc6cdc4bcb21&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Clash stats"&gt;ad52f7f61be3f010cbb1dc6cdc4bcb21&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_f5aba9931b2b3410cbb1dc6cdc4bcbc7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-11-06 17:31:51&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;h1 ng-repeat="i in data.gm"&gt;
+    {{i.name}}
+  &lt;/h1&gt;  
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1285711142</payload_hash>
+        <record_name>test stats</record_name>
+        <reverted_from/>
+        <source>9dd213d31b633010cbb1dc6cdc4bcbec</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 17:31:51</sys_created_on>
+        <sys_id>25bbdbdf1b633010cbb1dc6cdc4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17cf64e7f1b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 17:31:51</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>2dbbdbdfa36330104419d56436e51b23</update_guid>
+        <update_guid_history>2dbbdbdfa36330104419d56436e51b23:-1285711142,947b53df01633010092d8d4137b5804a:-907982662,be5bd3df6a633010754d1a026017b739:-1214419752,323b17df1a63301095c1fd52698b8146:323126711,d40bdf5fd96330107e8e70174db9f138:-854521012,6eeadf9fb9633010f6e23f9f1a876fb5:1138709374,e0aa139fab63301014db4fcf31dc47ab:1589166830,449adb5f216330107ed405b31047da94:-85819401,c77a5b9ffa6330105f52f6e55ac7ad64:1589166830,166a9f5fb26330103cb4a0919b410a60:-793389548,f489d31f45633010bb80ac35e3ae1b95:-1220876016,e5795b5f74633010d15b07f5ae1facb4:-1165859573,f059175f60633010535549ce57593dc2:1974697756,8509df1f8863301044adca11a9870a47:1952726756,bdf8935fdb633010ce42f754d3810eb4:-238591512,65d8135ff06330107bafe2a6f0b2acce:-838073992,96c8df1f686330109b356d2243f087d5:-2059119453,bdb8db1f5b63301079c7885b007070ad:-1631544003,2db89bdb3063301082251554af12f795:1333403589,a988131f426330102ffa4dfc9860ac2b:-1474091700,64f7d31f926330103c972a63aac51f65:-110541041,d7d7dfdbea6330106859feabe9ad4ce3:-1944069647,1fc71fdbfa633010c35c8e191a6d699d:-1228630823,c6b7dfdbfe633010aa2055f0bf25fcc2:-323295859,df77dbdb6863301019dbe47537f4dd26:1436513207,0c67df5bb2633010d389acd7569c2d14:856873657,ece93513eb6b34107e829d17c725fc76:1711503321,f9c9b1139a6b341032e6c2f260d685d9:-1129063791,71a97113bb6b3410f9925689bc43794c:-299173840,a1993113946b3410f5018b5b2bc38456:-586753525,8479bddfd52b3410f5dc3dab8c1b7018:-6871007,3d39f9df692b34102f1f3288e2570314:-270881892,3129f5df6f2b34105d7232e1bceef36a:942604412,e1a7395fb12b34104b1af0caaab2660e:-1228894482,9267319f612b34107df5bcfff285c68d:-1443307507,6057fd5f7a2b3410e7efdf816bc85140:-1537003126,86c6f55f372b341085cadcf5cdca98f3:1804894914,00a63d97442b341026c2717229c40c22:1988625175,e9fe2997f82b34108680a933c40994b7:-1963914236,e3dea997af2b34101a29d6e46dd033ba:1248593700,53be2597ba2b341005b35cbadf5dcacc:1721110431,829e6d57892b3410f5f1900a2a9b938b:1781537985,877e2597472b34106cdf93d1d4bf11c3:1932451904,0d4ead57f22b34109f6cbb4590b6a1e5:103339055,f60ead574b2b3410c5edb193f67f2398:472772595,38fd6d574e2b341014ac672c4bbd7553:131223537,8bbde557912b3410ebf8d3640b6ca212:-95970754,8b7d65576d2b341052649fba20a5f595:-1906013631,8d6d2557b32b341033326898e0ce9cce:-2015578651,425d69178e2b3410e60bc28e1117dcf8:-1950835632,3a2da157262b341065aa58759fb29f3f:-1720378644,4bfc21576f2b34101748a463e1ba220f:-1043358111,91dcadd3742b34109330b083b52ee25d:-539370967,1cbce917bd2b34109d372d88036df272:1329203262,d09c6117b62b341047079f999e9926a9:-1907192324,217c2517df2b3410bba7b92b5e1ef56f:1360946591,022c6117922b341018a1f607209fc3b5:619763741,651ce117d52b3410e1940139dabec747:449610206,aafba9d3012b34107e6a13cbe4319237:-28512664,f1aba993a92b34100a95d4ca7306ddc9:-784630454</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="test stats">fa2cd3131ba33010cbb1dc6cdc4bcb39</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 17:33:51</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>17bd97b3ffba4180830d17eddf2f6400</sys_id>
+        <sys_metadata>f5aba9931b2b3410cbb1dc6cdc4bcbc7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test stats</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_scope_delete display_value="">2d7e0a8b1311484abf3186d6f9124e81</sys_scope_delete>
+        <sys_update_name>sp_widget_f5aba9931b2b3410cbb1dc6cdc4bcbc7</sys_update_name>
+        <sys_update_version display_value="sp_widget_f5aba9931b2b3410cbb1dc6cdc4bcbc7">25bbdbdf1b633010cbb1dc6cdc4bcb24</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 17:33:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

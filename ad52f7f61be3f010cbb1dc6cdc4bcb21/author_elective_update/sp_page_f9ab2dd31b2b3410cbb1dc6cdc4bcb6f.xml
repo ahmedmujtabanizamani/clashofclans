@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>test_stats</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 09:22:16</sys_created_on>
+        <sys_id>f9ab2dd31b2b3410cbb1dc6cdc4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test_stats</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_update_name>sp_page_f9ab2dd31b2b3410cbb1dc6cdc4bcb6f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 09:22:16</sys_updated_on>
+        <title>test stats - Test Page</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="DELETE" query="documentkey=f9ab2dd31b2b3410cbb1dc6cdc4bcb6f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</application>
+        <file_path/>
+        <instance_id>7ccf6fbadb2c5fc0cbf6d5b0cf9619a0</instance_id>
+        <instance_name>dev51465</instance_name>
+        <name>sp_page_f9ab2dd31b2b3410cbb1dc6cdc4bcb6f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>test_stats</id><internal>false</internal><omit_watcher>false</omit_watcher><public>false</public><roles/><seo_script/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-11-06 09:22:16</sys_created_on><sys_id>f9ab2dd31b2b3410cbb1dc6cdc4bcb6f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test_stats</sys_name><sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package><sys_policy/><sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope><sys_update_name>sp_page_f9ab2dd31b2b3410cbb1dc6cdc4bcb6f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-11-06 09:22:16</sys_updated_on><title>test stats - Test Page</title><use_seo_script>false</use_seo_script></sp_page><sys_translated_text action="delete_multiple" query="documentkey=f9ab2dd31b2b3410cbb1dc6cdc4bcb6f"/></record_update>]]></payload>
+        <payload_hash>-515806293</payload_hash>
+        <record_name>test_stats</record_name>
+        <reverted_from/>
+        <source>2d52f7f61be3f010cbb1dc6cdc4bcb24</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 09:22:16</sys_created_on>
+        <sys_id>b1ab2dd31b2b3410cbb1dc6cdc4bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17cf48e43af0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 09:22:16</sys_updated_on>
+        <type>Page</type>
+        <update_guid>f9ab2dd3c02b3410995cb6de76dee871</update_guid>
+        <update_guid_history>f9ab2dd3c02b3410995cb6de76dee871:-515806293</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="test_stats">bc9c9b131ba33010cbb1dc6cdc4bcb06</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 17:35:38</sys_created_on>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>127c22b6455649f8815d3274499a42e4</sys_id>
+        <sys_metadata>f9ab2dd31b2b3410cbb1dc6cdc4bcb6f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test_stats</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_scope_delete display_value="">2d7e0a8b1311484abf3186d6f9124e81</sys_scope_delete>
+        <sys_update_name>sp_page_f9ab2dd31b2b3410cbb1dc6cdc4bcb6f</sys_update_name>
+        <sys_update_version display_value="sp_page_f9ab2dd31b2b3410cbb1dc6cdc4bcb6f">b1ab2dd31b2b3410cbb1dc6cdc4bcb72</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 17:35:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
