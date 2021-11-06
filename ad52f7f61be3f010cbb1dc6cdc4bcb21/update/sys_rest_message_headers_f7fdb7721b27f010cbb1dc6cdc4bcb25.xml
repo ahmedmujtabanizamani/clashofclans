@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_headers">
+    <sys_rest_message_headers action="INSERT_OR_UPDATE">
+        <name>authorization</name>
+        <rest_message display_value="clan stats">8c5db3721b27f010cbb1dc6cdc4bcb07</rest_message>
+        <sys_class_name>sys_rest_message_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-05 06:45:31</sys_created_on>
+        <sys_id>f7fdb7721b27f010cbb1dc6cdc4bcb25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>authorization</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_update_name>sys_rest_message_headers_f7fdb7721b27f010cbb1dc6cdc4bcb25</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-05 06:45:31</sys_updated_on>
+        <value>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImEwNzgxYWNhLWJkNzAtNDJmNi05MDE0LTlhNDc5YTQ5YjAwNiIsImlhdCI6MTYzNTkzNjI0Mywic3ViIjoiZGV2ZWxvcGVyL2FiZTVhNDAyLWU5MWMtMzMwMS0wOTRlLTRmMmFlNzgwMzhmYyIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjE0OS45Ni42LjE0Il0sInR5cGUiOiJjbGllbnQifV19.VyTDbHCyhEI7HN90cmPy1K4Y1WwURwGQPeAJNUc_2ZX6zyDkkY_reDL3YogWRNsyKpI1NhSdJg00TFpjvbEJog</value>
+    </sys_rest_message_headers>
+</record_update>

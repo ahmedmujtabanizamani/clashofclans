@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Daily stats" max_length="40" name="x_714442_clash_s_0_daily_stats" sizeclass="94" type="collection">
+        <element default="0" label="Donations" max_length="40" name="donations" type="integer"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element display="true" label="Player" max_length="32" name="player" reference="x_714442_clash_s_0_players" type="reference"/>
+        <element default="0" label="Received" max_length="40" name="received" type="integer"/>
+        <index name="index">
+            <element name="player"/>
+        </index>
+    </element>
+</database>

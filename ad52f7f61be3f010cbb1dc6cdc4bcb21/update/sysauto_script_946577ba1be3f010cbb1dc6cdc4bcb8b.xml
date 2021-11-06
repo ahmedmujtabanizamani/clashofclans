@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>populate players</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2021-11-05 06:07:03</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[var status = "";
+var body = "";
+try{
+	var r = new sn_ws.RESTMessageV2('clan stats', 'Default GET');
+	r.setStringParameterNoEscape("clanTag", gs.getProperty("x_714442_clash_s_0.clanTag"));
+	
+	var response = r.execute();
+	
+	body = JSON.parse(response.getBody());
+	status = response.getStatusCode();
+	
+	
+	if(status === 200){
+		var gr = new GlideRecord("x_714442_clash_s_0_players");
+		var len = body.items.length;
+		for(i=0; i<len; i++){
+			
+			gr.setValue("name", body.items[i].name);
+			gr.setValue("player_id", body.items[i].tag);
+			gr.insert();
+		}
+		gs.info("coc players inserted success");
+	}
+
+
+}catch(err){
+	gs.error("error is" +err);
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-05 06:07:42</sys_created_on>
+        <sys_id>946577ba1be3f010cbb1dc6cdc4bcb8b</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>populate players</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_update_name>sysauto_script_946577ba1be3f010cbb1dc6cdc4bcb8b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-05 07:13:21</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

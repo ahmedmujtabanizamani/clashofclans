@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">43ce5ed31beb3410cbb1dc6cdc4bcb20</sp_column>
+        <sp_widget display_value="Image Link">86776e0453331300a699ddeeff7b12be</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 14:23:32</sys_created_on>
+        <sys_id>f6907ed31b2f3410cbb1dc6cdc4bcb84</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>report</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_update_name>sp_instance_f6907ed31b2f3410cbb1dc6cdc4bcb84</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 14:24:18</sys_updated_on>
+        <title>report</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"image": {
+		"value": "report1",
+		"displayValue": "report1"
+	},
+	"title": {
+		"value": "report",
+		"displayValue": "report"
+	},
+	"description": {
+		"value": "bar chart",
+		"displayValue": "bar chart"
+	},
+	"link": {
+		"value": "https://dev51465.service-now.com/sys_report_display.do?sysparm_report_id=0d756a5b1beb3410cbb1dc6cdc4bcb49",
+		"displayValue": "https://dev51465.service-now.com/sys_report_display.do?sysparm_report_id=0d756a5b1beb3410cbb1dc6cdc4bcb49"
+	},
+	"link_title": {
+		"value": "report",
+		"displayValue": "report"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=f6907ed31b2f3410cbb1dc6cdc4bcb84"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</application>
+        <file_path/>
+        <instance_id>7ccf6fbadb2c5fc0cbf6d5b0cf9619a0</instance_id>
+        <instance_name>dev51465</instance_name>
+        <name>sp_instance_f6907ed31b2f3410cbb1dc6cdc4bcb84</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;43ce5ed31beb3410cbb1dc6cdc4bcb20&lt;/sp_column&gt;&lt;sp_widget display_value="Image Link"&gt;86776e0453331300a699ddeeff7b12be&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-11-06 14:23:32&lt;/sys_created_on&gt;&lt;sys_id&gt;f6907ed31b2f3410cbb1dc6cdc4bcb84&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;report&lt;/sys_name&gt;&lt;sys_package display_value="Clash stats" source="x_714442_clash_s_0"&gt;ad52f7f61be3f010cbb1dc6cdc4bcb21&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Clash stats"&gt;ad52f7f61be3f010cbb1dc6cdc4bcb21&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_f6907ed31b2f3410cbb1dc6cdc4bcb84&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-11-06 14:24:18&lt;/sys_updated_on&gt;&lt;title&gt;report&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"image": {
+		"value": "report1",
+		"displayValue": "report1"
+	},
+	"title": {
+		"value": "report",
+		"displayValue": "report"
+	},
+	"description": {
+		"value": "bar chart",
+		"displayValue": "bar chart"
+	},
+	"link": {
+		"value": "https://dev51465.service-now.com/sys_report_display.do?sysparm_report_id=0d756a5b1beb3410cbb1dc6cdc4bcb49",
+		"displayValue": "https://dev51465.service-now.com/sys_report_display.do?sysparm_report_id=0d756a5b1beb3410cbb1dc6cdc4bcb49"
+	},
+	"link_title": {
+		"value": "report",
+		"displayValue": "report"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f6907ed31b2f3410cbb1dc6cdc4bcb84"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-740827553</payload_hash>
+        <record_name>report</record_name>
+        <reverted_from/>
+        <source>2d52f7f61be3f010cbb1dc6cdc4bcb24</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 14:24:18</sys_created_on>
+        <sys_id>8ec072571b2f3410cbb1dc6cdc4bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17cf5a2c86f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 14:24:18</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>c6c07257ea2f3410cdc713ddce6aaa08</update_guid>
+        <update_guid_history>c6c07257ea2f3410cdc713ddce6aaa08:-740827553,bea0bed3642f3410bc3dee5bcb9cf376:354064433,36907ed3ac2f3410e456eaee0ecf1c86:723556605</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="report">5fe072571b2f3410cbb1dc6cdc4bcb31</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 14:24:56</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>67441f698f984608a4f62d4f9e056d90</sys_id>
+        <sys_metadata>f6907ed31b2f3410cbb1dc6cdc4bcb84</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>report</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_scope_delete display_value="">2d7e0a8b1311484abf3186d6f9124e81</sys_scope_delete>
+        <sys_update_name>sp_instance_f6907ed31b2f3410cbb1dc6cdc4bcb84</sys_update_name>
+        <sys_update_version display_value="sp_instance_f6907ed31b2f3410cbb1dc6cdc4bcb84">8ec072571b2f3410cbb1dc6cdc4bcb08</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 14:24:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

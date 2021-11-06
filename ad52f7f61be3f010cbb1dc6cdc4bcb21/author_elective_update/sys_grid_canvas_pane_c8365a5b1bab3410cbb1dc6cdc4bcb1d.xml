@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA Clan Stats - New Tab">633056d31bab3410cbb1dc6cdc4bcb04</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2021-11-06 17:28:06">40365a5b1bab3410cbb1dc6cdc4bcb1c</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 12:28:06</sys_created_on>
+        <sys_id>c8365a5b1bab3410cbb1dc6cdc4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>633056d31bab3410cbb1dc6cdc4bcb04</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_c8365a5b1bab3410cbb1dc6cdc4bcb1d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 12:28:06</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</application>
+        <file_path/>
+        <instance_id>7ccf6fbadb2c5fc0cbf6d5b0cf9619a0</instance_id>
+        <instance_name>dev51465</instance_name>
+        <name>sys_grid_canvas_pane_c8365a5b1bab3410cbb1dc6cdc4bcb1d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA Clan Stats - New Tab">633056d31bab3410cbb1dc6cdc4bcb04</grid_canvas><height>10</height><portal_widget display_value="Created 2021-11-06 17:28:06">40365a5b1bab3410cbb1dc6cdc4bcb1c</portal_widget><posx>0</posx><posy>0</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-11-06 12:28:06</sys_created_on><sys_id>c8365a5b1bab3410cbb1dc6cdc4bcb1d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>633056d31bab3410cbb1dc6cdc4bcb04</sys_name><sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package><sys_policy/><sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope><sys_update_name>sys_grid_canvas_pane_c8365a5b1bab3410cbb1dc6cdc4bcb1d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-11-06 12:28:06</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>-779798894</payload_hash>
+        <record_name>633056d31bab3410cbb1dc6cdc4bcb04</record_name>
+        <reverted_from/>
+        <source>2d52f7f61be3f010cbb1dc6cdc4bcb24</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 12:28:06</sys_created_on>
+        <sys_id>44365a5b1bab3410cbb1dc6cdc4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17cf538672d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 12:28:06</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>8c365a5b8dab34104eb356411f649c1e</update_guid>
+        <update_guid_history>8c365a5b8dab34104eb356411f649c1e:-779798894</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-06 12:28:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>215fdc274da043e68485be205e991471</sys_id>
+        <sys_metadata>c8365a5b1bab3410cbb1dc6cdc4bcb1d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>633056d31bab3410cbb1dc6cdc4bcb04</sys_name>
+        <sys_package display_value="Clash stats" source="x_714442_clash_s_0">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Clash stats">ad52f7f61be3f010cbb1dc6cdc4bcb21</sys_scope>
+        <sys_scope_delete display_value="">2d7e0a8b1311484abf3186d6f9124e81</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_c8365a5b1bab3410cbb1dc6cdc4bcb1d</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_c8365a5b1bab3410cbb1dc6cdc4bcb1d">44365a5b1bab3410cbb1dc6cdc4bcb1f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-06 12:28:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
